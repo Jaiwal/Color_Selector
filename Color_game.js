@@ -7,9 +7,8 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1=document.querySelector("h1");
 var resetButton=document.querySelector("#reset");
-
-var easybtn=document.querySelector("#easybtn");
-var hardbtn=document.querySelector("#hardbtn");
+var easyBtn = document.querySelector("#easyBtn");
+var hardBtn = document.querySelector("#hardBtn");
 
 
 
@@ -23,9 +22,7 @@ easybtn.addEventListener("click",function(){
 	pickedColor=pickColor();
 	colorDisplay.textContent=pickedColor;
 
-
-
-	for(var i=0;i<squares.length;i++)
+for(var i=0;i<squares.length;i++)
 	{
 		 if(colors[i])
 		 {
@@ -69,6 +66,7 @@ resetButton.addEventListener("click",function()
 	pickedColor=pickColor();
 	//change color display to match picked color
 	colorDisplay.textContent=pickedColor;
+	this.textContent="New Colors";
 
 
 	messageDisplay.textContent="";
